@@ -37,7 +37,7 @@ if submitted:
     elif sunlight == "Partial Sun" and watering == "Weekly":
         plant = "🪴 Pothos"
         desc = "Beautiful trailing plant, grows well indoors, easy to care for."
-        image_url = "https://images.unsplash.com/photo-1587307367420-0f1c0a3f46c1?auto=format&fit=crop&w=600&q=80"
+        image_url = "https://unsplash.com/photos/a-potted-plant-hanging-from-a-wooden-shelf-znhiWxyKDW0"
     
     else:
         plant = "🌼 Peace Lily"
