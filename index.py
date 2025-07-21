@@ -25,23 +25,25 @@ with st.form("plant_quiz"):
 
     submitted = st.form_submit_button("🌱 Get My Plant")
 
-# Result logic
+# Recommendation logic
 if submitted:
     st.markdown("---")
+    
     if sunlight == "Shade" or watering == "Rarely":
         plant = "🌵 Snake Plant"
         desc = "Thrives in low light and needs very little water. Perfect for beginners!"
-        image_url = "https://i.pinimg.com/564x/b7/bc/6e/b7bc6ebcbd6b03d7e5f733c3ffb7dbcd.jpg"
+        image_url = "https://images.unsplash.com/photo-1616627985881-20baae0d6b8f?auto=format&fit=crop&w=600&q=80"
+    
     elif sunlight == "Partial Sun" and watering == "Weekly":
         plant = "🪴 Pothos"
         desc = "Beautiful trailing plant, grows well indoors, easy to care for."
-        image_url = "feey-IZz3sboy1g8-unsplash Medium"
+        image_url = "https://images.unsplash.com/photo-1587307367420-0f1c0a3f46c1?auto=format&fit=crop&w=600&q=80"
+    
     else:
         plant = "🌼 Peace Lily"
         desc = "Loves bright, indirect light. Purifies air and looks elegant."
-        image_url = "https://i.pinimg.com/564x/11/14/16/111416dc1c4d872f23f6f6b8b1117c6c.jpg"
+        image_url = "https://images.unsplash.com/photo-1609673816742-199dd9e90899?auto=format&fit=crop&w=600&q=80"
 
-    # Display result
     st.success(f"Your Perfect Plant: **{plant}**")
     st.image(image_url, caption=plant, use_column_width=True)
     st.info(desc)
